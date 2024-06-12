@@ -24,3 +24,6 @@ def create_blog(request):
     else:
         return render(request, 'blog/create_blog.html')
         
+def blog_details(request , slug):
+    blog = get_object_or_404(Blog, slug=slug)
+    return render(request, 'blog/blog_details.html', context={'blog': blog})
