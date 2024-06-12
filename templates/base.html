@@ -6,7 +6,10 @@
     <title>Le blog</title>
 </head>
 <body>
-    
+    <header>
+        <a href="{% url 'index' %}">Le blog</a>
+        <a href="{% url 'view_blog' %}">Voir les blogs</a>
+    </header>
 
     <main>
         {% block content %}
