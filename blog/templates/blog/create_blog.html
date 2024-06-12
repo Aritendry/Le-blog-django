@@ -1,19 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Creation de blog : </h1>
-    <form action="" method="POST">
+    <h1 class="text-2xl font-bold mb-4">Création de blog :</h1>
+    <form action="" method="POST" class="max-w-md mx-auto">
         {% csrf_token %}
-        <label for="title">Titre : </label>
-        <input type="text" name="title" id="title">
-        <br>
-        <label for="summary">Decription : </label>
-        <br>
-        <textarea name="summary" id="summary"></textarea>
-        <br>
-        <label for="author">Auteur : </label>
-        <input type="text" name="author" id="author">
+        <div class="mb-4">
+            <label for="title" class="block text-gray-700">Titre :</label>
+            <input type="text" name="title" id="title" class="form-input mt-1 block w-full rounded-md border-gray-300">
+        </div>
+        <div class="mb-4">
+            <label for="summary" class="block text-gray-700">Description :</label>
+            <textarea name="summary" id="summary" rows="5" class="form-textarea mt-1 block w-full rounded-md border-gray-300"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="author" class="block text-gray-700">Auteur :</label>
+            <input type="text" name="author" id="author" class="form-input mt-1 block w-full rounded-md border-gray-300">
+        </div>
 
-        <button type="submit">Publier</button>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Publier</button>
     </form>
 {% endblock %}

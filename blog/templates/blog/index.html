@@ -1,5 +1,61 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Ceci est la page d'index</h1>
+<div class="container mx-auto px-6 py-8">
+    <!-- Citation -->
+    <div class="bg-gray-700 text-white p-6 rounded-lg shadow-lg mb-8">
+        <p class="text-xl italic">"Vous ne pouvez pas réussir sans avoir essayé."</p>
+        <p class="text-right mt-4">- Anonyme</p>
+    </div>
+    
+    <h1 class="text-4xl font-bold mb-8">Bienvenue sur Le blog</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- About the Blog -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">À propos de ce blog</h2>
+            <p class="text-gray-700">Ce blog est un espace où nous partageons des articles sur divers sujets allant de la technologie à la santé. Nous visons à offrir un contenu riche et diversifié pour nos lecteurs. Chaque article est soigneusement rédigé par des experts dans leur domaine. Notre objectif est de créer une communauté de lecteurs passionnés. Rejoignez-nous pour explorer un monde de connaissances et d'inspiration.</p>
+        </div>
+        
+        <!-- Blog Creation Date -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Date de création</h2>
+            <p class="text-gray-700">Le blog a été créé en janvier 2023 avec l'objectif de partager des connaissances et des expériences variées. Depuis sa création, nous avons publié des centaines d'articles. Nous croyons fermement que l'échange de connaissances peut inspirer et éduquer les gens. C'est avec cette vision que nous avons démarré cette aventure. Chaque jour, nous nous efforçons de vous apporter du contenu de qualité.</p>
+        </div>
+
+        <!-- Number of Users -->
+        <div class="bg-green-100 p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Nombre d'utilisateurs</h2>
+            <p class="text-gray-900">Notre blog compte actuellement plus de <strong>50 000 utilisateurs actifs</strong>. Ces utilisateurs viennent de différents horizons et partagent notre passion pour l'apprentissage. Nous sommes reconnaissants pour chaque lecteur qui prend le temps de lire et de commenter nos articles. Leur engagement et leurs retours sont inestimables pour nous. Merci à tous nos fidèles lecteurs.</p>
+        </div>
+
+        <!-- Popular Topics -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Sujets populaires</h2>
+            <p class="text-gray-700">Parmi les sujets les plus populaires sur notre blog, vous trouverez des articles sur la technologie, la santé, le voyage et la cuisine. Chaque sujet est exploré en profondeur par nos auteurs. Nos lecteurs apprécient particulièrement les articles qui combinent des informations pratiques et des anecdotes personnelles. Nous aimons également aborder des sujets d'actualité et des tendances émergentes. Explorez nos différentes catégories pour découvrir des articles passionnants.</p>
+        </div>
+        
+        <!-- Community Engagement -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Engagement de la communauté</h2>
+            <p class="text-gray-700">Nous croyons fermement en l'importance de l'engagement communautaire. Nos lecteurs sont encouragés à commenter, partager et interagir avec nos articles. Nous organisons également des discussions en ligne et des événements pour renforcer notre communauté. Les contributions de nos lecteurs enrichissent nos discussions et apportent des perspectives variées. Rejoignez notre communauté pour participer activement et partager vos idées.</p>
+        </div>
+        
+        <!-- Future Plans -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Plans futurs</h2>
+            <p class="text-gray-700">Nous avons de grands projets pour l'avenir de ce blog. Nous prévoyons d'introduire de nouvelles fonctionnalités pour améliorer l'expérience utilisateur. Cela inclut des podcasts, des vidéos et des webinaires interactifs. Nous travaillons également sur des collaborations avec des experts et des influenceurs. Notre objectif est de continuer à grandir et à évoluer pour mieux servir nos lecteurs. Restez connectés pour découvrir les nouveautés à venir.</p>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Informations de contact</h2>
+            <p class="text-gray-900">Vous avez des questions ou des suggestions? N'hésitez pas à nous contacter. Vous pouvez nous envoyer un email à <a href="mailto:contact@leblog.com" class="text-blue-500 hover:underline">contact@leblog.com</a> ou nous suivre sur nos réseaux sociaux. Nous sommes actifs sur Twitter, Facebook et Instagram. Votre feedback est précieux pour nous et nous aide à nous améliorer continuellement. Merci de faire partie de notre communauté.</p>
+        </div>
+    </div>
+    
+    <div class="mt-12 text-center">
+        <p class="text-gray-700">Merci à ChatGPT pour l'aide dans la réalisation de ce projet. Grâce à son support, nous avons pu créer un blog fonctionnel et attrayant.</p>
+    </div>
+</div>
 {% endblock %}

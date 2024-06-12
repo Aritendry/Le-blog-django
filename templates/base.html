@@ -1,21 +1,34 @@
+{% load tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le blog</title>
+    {% tailwind_css %}
 </head>
-<body>
-    <header>
-        <a href="{% url 'index' %}">Le blog</a>
-        <a href="{% url 'view_blog' %}">Voir les blogs</a>
-        <a href="{% url 'create_blog' %}">Creer des blogs</a>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="{% url 'index' %}" class="text-2xl font-bold hover:text-gray-400 transition duration-300">Le blog</a>
+            <nav>
+                <a href="{% url 'index' %}" class="text-lg mx-4 hover:text-gray-400 transition duration-300">Accueil</a>
+                <a href="{% url 'view_blog' %}" class="text-lg mx-4 hover:text-gray-400 transition duration-300">Voir les blogs</a>
+                <a href="{% url 'create_blog' %}" class="text-lg mx-4 hover:text-gray-400 transition duration-300">Créer un blog</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="container mx-auto px-6 py-8">
         {% block content %}
         
         {% endblock %}
     </main>
+
+    <footer class="bg-gray-800 text-white mt-12 py-4">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Le blog. Tous droits réservés.
+        </div>
+    </footer>
 </body>
 </html>
